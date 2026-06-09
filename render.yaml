@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: mp2pstore-bot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node src/index.js
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: MONGODB_URI
+        sync: false
+      - key: CONTACT_USERNAME
+        value: msgp2p
+      - key: ADMIN_SECRET
+        value: /Admin7788
+      - key: STORE_NAME
+        value: mP2Pstore

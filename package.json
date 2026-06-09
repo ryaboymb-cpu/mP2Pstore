@@ -1,0 +1,20 @@
+{
+  "name": "mp2pstore-bot",
+  "version": "1.0.0",
+  "description": "Telegram-бот ресейл-магазина mP2Pstore (grammY + MongoDB)",
+  "type": "module",
+  "main": "src/index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "grammy": "^1.21.0",
+    "mongoose": "^8.4.0"
+  }
+}
